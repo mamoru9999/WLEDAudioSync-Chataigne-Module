@@ -95,23 +95,23 @@ var SCexist = false;
 
 // osc
 var OSCModule = null;
-var OSCIP = "127.0.0.1";
+var OSCIP = "10.0.27.1";
 
 // TMPDIR
 var tempDIR = "";
 
 //HOME Location
 //%USERPROFILE% for WIN and $HOME for others
-var homeDIR = "";
+var homeDIR = "$HOME";
 var winHOME = "";
 
 // Volume
 var wledVol = 0;
 // Volume Multiplier
-var volMultiplier = 512;
+var volMultiplier = 2048;
 
 // Global FFT Multiplier
-var fftMultiplier = 254;
+var fftMultiplier = 510;
 // FFT Data
 var FFTWLED = [];
 // FFT Max Freq / Magnitude
@@ -120,8 +120,8 @@ var fftSoundMaxFreqIndex = 0;
 // FFT Mode
 var fftMode = "";
 //minAudio/max DB
-var minDB = -50;
-var maxDB = 0;
+var minDB = -85;
+var maxDB = -25;
 // Frequence table
 var FREQTABLE = [];
 
@@ -135,7 +135,7 @@ var wledMag = 0;
 // UDP
 var multicastIP = "239.0.0.1";
 var	uDPPort = 11988;
-var myIP = "127.0.0.1";
+var myIP = "10.0.27.1";
 
 // Init Flag
 // to made some logic only once at init
@@ -420,7 +420,7 @@ function moduleParameterChanged (param)
 		
 		if (local.parameters.output.local.get() == 1){
 			
-			multicastIP = "127.0.0.1";
+			multicastIP = "10.0.27.1";
 			
 		} else {
 			
