@@ -35,10 +35,10 @@
 			"type": "Enum",
 			"description": "Bind Port to this IP address and send a test message.
 	Used if you're in trouble to send to the Multicast Group",
-			"default": "127.0.0.1",
+			"default": "10.0.27.1",
 			"readOnly": false,
 			"options": {
-				"127.0.0.1":"127.0.0.1"				
+				"10.0.27.1":"127.0.0.1"				
 			}
 		},
 		"Send Test Message": {
@@ -76,7 +76,7 @@
 		"Volume Multiplier": {
 			"type": "Float",
 			"description": "Volume level multiplier",
-			"default": 512,
+			"default": 2048,
 			"min":0,
 			"max":5120
 		},
@@ -154,7 +154,7 @@
 				"type": "Boolean",
 				"description": "Checked, will use RTMGC
 	Real Time Music Genre Classification",
-				"default": false
+				"default": true
 			},
 			"Include All Predictions": {
 				"type": "Boolean",
@@ -189,7 +189,7 @@
 				"type": "Boolean",
 				"description": "Checked, will use RTMMD:
 	Real Time Music Mood Detection",
-				"default": false
+				"default": true
 			},
 			"Show Screen": {
 				"type": "Boolean",
